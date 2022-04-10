@@ -1,0 +1,7 @@
+---
+# Exercise: hello world page
+- name: "hello world page" 
+  hosts: localhost
+  roles:
+   - prepare
+   - apache
