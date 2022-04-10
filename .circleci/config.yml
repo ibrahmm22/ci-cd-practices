@@ -28,7 +28,7 @@ jobs:
       - run:
           name: Configure server
           command: |
-            ansible-playbook -i ansible/inventory-file ansible/main-remote-control.yml
+            ansible-playbook -i ansible/inventory ansible/main-remote-control.yml
 
 
 workflows:
