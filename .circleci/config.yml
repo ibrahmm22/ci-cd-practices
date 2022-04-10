@@ -26,6 +26,10 @@ jobs:
             # install the dependencies needed for your playbook
             apk add --update ansible 
       - run:
+        name: disable host checking
+        command: |
+          export ANSIBLE_HOST_KEY_CHECKING=False
+      - run:
           name: Configure server
           command: |
             ansible-playbook -i ansible/inventory ansible/main-remote-control.yml
